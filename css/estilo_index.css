@@ -15,14 +15,29 @@ body {
 	background: #181313;
 }
 
+/* grid layout para a área da logo */
 .grid {
 	display: grid;
 	grid-template:columns: 1fr;
 	justify-content: center;
 }
 
+.imagem-logo {
+	max-width: 120px;
+	background-image: url("../img/logo.png");
+	background-size: 100px 80px;
+	color: transparent;
+}
+
+a.imagem-logo {
+	display: inline-block;
+	width: 100px;
+	height: 80px;
+	color: transparent;
+}
+
 .logo {
-	color: #8D0303;
+	color: #dc3545;
 }
 
 .container-login {
@@ -32,7 +47,28 @@ body {
 }
 
 .container-login h3 {
+	font-family: Open sans;
 	text-align: center;
-	color: #8D0303;
+	color: #dc3545;
 	margin-bottom: 30px;
+}
+
+.form-control {
+	border-radius: 17px;
+}
+
+a.esqueceu-senha {
+	margin-left: 135px;
+	text-decoration: none;
+}
+
+a.cadastro {
+	margin-left: 95px;
+	text-decoration: none;
+}
+
+@font-face {
+	font-family: "Open sans";
+	src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+		 url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
 }
