@@ -13,7 +13,7 @@
 		
 		<header>
 			<div class="grid">
-				<a class="navbar-brand imagem-logo" href="index.html">
+				<a class="navbar-brand imagem-logo" href="index.php">
 					LOGO
 				</a>
 			</div>	
@@ -26,25 +26,25 @@
 			</button>
 		</header>
 
-		<div class="container-login">
-			<h3>APP RESTAURANT</h3>
-			<form action="" method="post" id="form-login">
+		<div class="container-login fadeIn">
+			<h3>APP RESTAURANTE</h3>
+			<form action="php/autenticar_usuario.php" method="post" id="form-login">
 				<div class="form-group">
-					<input type="email" name="email" id="email" class="form-control" placeholder="Insira o seu usuário ou e-mail">
+					<input type="email" name="email" id="email" class="form-control" placeholder="Digite o seu usuário ou e-mail">
 				</div>
 				<div class="form-group">
-					<input type="password" name="senha" id="senha" class="form-control" placeholder="Insira a sua senha">
+					<input type="password" name="senha" id="senha" class="form-control" placeholder="Digite a sua senha">
 				</div>
 
 				<button type="submit" class="btn btn-danger form-control">Login</button>
 
 				<br/><br/>
 
-				<a href="" class="esqueceu-senha">Esqueceu a senha</a>
+				<a href="" class="esqueceu-senha">Esqueceu a senha?</a>
 
 				<br/><br/>
 
-				<a href="" class="cadastro">Ainda não possui uma conta?</a>
+				<a href="inscrevase.php" class="cadastro">Ainda não possui uma conta?</a>
 			</form>
 		</div>
 

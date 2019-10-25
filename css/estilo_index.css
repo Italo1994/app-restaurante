@@ -5,7 +5,7 @@
 	-moz-box-sizing: border-box;
 }
 
-html, body {
+html {
 	height: 100%;
 }
 
@@ -42,12 +42,15 @@ a.imagem-logo {
 
 .container-login {
 	background-color: transparent;
-	margin: 200px auto;
+	margin: 0 auto;
+	margin-top: 100px;
+	/*margin-bottom: 20px;*/
 	max-width: 400px;
 }
 
 .container-login h3 {
 	font-family: Open sans;
+	font-variant: small-caps;
 	text-align: center;
 	color: #dc3545;
 	margin-bottom: 30px;
@@ -67,8 +70,43 @@ a.cadastro {
 	text-decoration: none;
 }
 
+/* DEFINIÇÃO DE FONTES EXTERNAS */
 @font-face {
 	font-family: "Open sans";
 	src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
 		 url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
+}
+
+/* DEFININDO ANIMAÇÕES PARA A PÁGINA DE LOGIN */
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.fadeIn {
+	-webkit-animation: fadeIn 3s ease-in-out;
+	-moz-animation: fadeIn 3s ease-in-out;
+	animation: fadeIn 3s ease-in-out;
 }
