@@ -6,7 +6,7 @@
 	box-sizing: border-box;
 }
 
-html, body {
+html, body, .tela-principal {
 	height: 100%;
 }
 
@@ -14,35 +14,180 @@ body {
 	font-size: 100%;
 	font-family: Arial, Times, sans-serif;
 	background: #181313;
+	background-image: url("../img/shot.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 .header {
-	display: grid;
-	grid-template-columns: 200px 400px;
-	justify-content: space-between;
+	display: flex;
 	align-items: center;
 	width: 100%;
-	height: 100px;
+	height: 60px;
+	position: fixed;
+	z-index: 1;
+	background-color: #FFF;
 }
 
-.header ul {
+header a.logo {
+	margin-left: 40px;
+	width: 80px;
+	height: 50px;
+	background-image: url("../img/logo.png");
+	background-size: 80px 50px;
+	background-repeat: no-repeat;
+	color: transparent;
+}
+
+/* =========== MENU DE NAVEGAÇÃO ============ */
+nav {
+	display: flex;
+	flex: 1 1 400px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul {
 	list-style-type: none;
 }
 
-.header li {
+nav li {
 	display: inline;
 	padding: 25px;
 }
 
-.header a {
+nav li a {
+	color: #dc3545;
+}
+
+nav a:link {
 	text-decoration: none;
 	text-transform: uppercase;
-	color: #dc3545;
 	font-size: 1.2em;
+	font-family: 'Forum', cursive;
 }
 
-a.logo {
-	margin-left: 40px;
+nav a:visited {
+	color: #dc3545;
 }
 
-/*  MENU ASIDE */
+nav a:hover {
+	color: green;
+}
+
+nav a:active {
+	color: black;
+}
+
+.navbar {
+	height: 60px;
+}
+
+.flex-end {
+	justify-content: flex-end;
+}
+
+.btn-custom {
+	display: none;
+}
+
+nav button {
+	width: 40px;
+	height: 45px;
+}
+
+.bar {
+	width: 100%;
+	border-bottom: 1px solid black;
+	margin-top: 4px;
+}
+/* ========== /NAVEGAÇÃO  ============= */
+
+
+/* ========== TELA PRINCIPAL ========== */
+.tela-principal {
+	width: 100%;
+	height: 51vw;
+	background-color: #1abc9c;
+}
+
+/* ========== /TELA PRINCIPAL	============ */
+
+/* SECTION JOGOS */
+
+.divisao-section {
+	background-color: #000;
+	/* height: 550px; */
+	border-bottom: 1px solid gray;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: black;
+	max-width: 800px;
+	margin: 30px auto;
+}
+
+.flex > div {
+	flex: 1 1 200px;
+	margin: 10px;
+}
+
+.flex > div p {
+	color: #fff;
+	text-align: justify;
+}
+
+
+/* / SECTION JOGOS */
+
+/* TIPOGRAFIA */
+h2 {
+	text-align: center;
+	color: #FFF;
+	margin-top: 20px;
+	font-family: 'Forum', cursive;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px) {
+	.divisao-section {
+		height: 720px;
+	}
+
+	.btn-custom {
+		display: inline;
+		position: fixed;
+		top: 10px;
+		right: 10px;
+	}
+
+	.slide {
+		background: #343a40;
+		display: none;
+		width: 100%;
+	}
+
+	a.logo {
+		display: none;
+	}
+
+	nav {
+		display: none;
+	}
+
+	nav li {
+		display: inline-block;
+		width: 100%;
+		border-bottom: 1px solid gray;
+		color: white;
+	}
+
+	header a.logo {
+		margin-left: 10px;
+	}
+
+}

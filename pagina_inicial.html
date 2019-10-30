@@ -8,24 +8,96 @@
 
 		<link rel="stylesheet" type="text/css" href="css/pagina_inicial.css">
 
-		<!-- link para o import do bootstrap 4 -->
-		<link rel="stylesheet" type="text/css" href="">
+		<!-- link para o import do css bootstrap 4 -->
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+		<!-- Google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Forum|Srisakdi&display=swap" rel="stylesheet">
+	
+		<!-- link para o import do javascript bootstrap 4 -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- links externos -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		  
+		<script src="js/animacoes.js"></script>
 	</head>
 
 	<body>
 
 		<header class="header">
-			<a href="" class="logo">LOGO</a>
+			<nav class="navbar navbar-expand-md bg-dark fixed-top">
 
-			<nav>
-				<ul>
-					<a href=""> <li>Link</li> </a>
-					<a href=""> <li>Link</li> </a>
-					<a href=""> <li>Link</li> </a>
-					<a href=""> <li>Link</li> </a>
-				</ul>
+				<a href="pagina_inicial.html" class="logo"></a>
+				
+				
+				<div class="slide flex-end" id="menu-collapse">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a href="#" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Sobre</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Serviços</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Contato</a>
+						</li>
+					</ul>
+				</div>
+
+				<button type="button" class="btn-custom" id="botao-collapse" onclick="">
+					<p class="bar"></p> 
+					<p class="bar"></p> 
+					<p class="bar"></p>
+				</button>
 			</nav>
 		</header>
+
+		<div class="tela-principal">
+			<img src="img/simulation.jpg" width="100%" height="100%">
+		</div>
+
+		<section class="divisao-section">
+			<h2>Temos uma variedade de jogos</h2>
+			<div class="flex">
+				<div>
+					<img src="img/game2.jpg" class="img-fluid img-thumbnail">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet dictum nisl, eu porta libero iaculis at.</p>
+				</div>	
+				<div>
+					<img src="img/game2.jpg" class="img-fluid img-thumbnail">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet dictum nisl, eu porta libero iaculis at.</p>
+				</div>
+				<div>
+					<img src="img/game2.jpg" class="img-fluid img-thumbnail">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet dictum nisl, eu porta libero iaculis at.</p>
+				</div>
+				<div>
+					<img src="img/game4.jpg" class="img-fluid img-thumbnail">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet dictum nisl, eu porta libero iaculis at.</p>
+				</div>
+				<div>
+					<img src="img/game1.jpg" class="img-fluid img-thumbnail">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet dictum nisl, eu porta libero iaculis at.</p>
+				</div>
+				<div>
+					<img src="img/game5.jpg" class="img-fluid img-thumbnail">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet dictum nisl, eu porta libero iaculis at.</p>
+				</div>
+
+				<a href="#" class="btn btn-primary form-control">Saiba Mais</a>
+			</div>
+			
+		</section>
+
+		<section class="divisao-section">
+			
+		</section>
 
 	</body>
 </html>
